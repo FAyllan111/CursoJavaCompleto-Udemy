@@ -1,4 +1,4 @@
-package cursoJava.modulo;
+package cursoJava.modulo.test;
 
 import java.util.Scanner;
 
