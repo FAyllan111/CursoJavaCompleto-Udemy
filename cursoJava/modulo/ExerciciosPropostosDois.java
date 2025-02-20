@@ -122,8 +122,26 @@ public class ExerciciosPropostosDois {
         /*
         Leia 2 valores com uma casa decimal (x e y), que devem representar as coordenadas de um ponto em um plano. A seguir, determine qual o quadrante ao qual pertence o ponto, ou se está sobre um dos eixos cartesianos ou na origem (x = y = 0). Se o ponto estiver na origem, escreva a mensagem “Origem”. Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a situação. */
 
+        System.out.println("Digite o valor da coordenada X: ");
         numeroUm = sc.nextDouble();
+        System.out.println("Digite o valor da coordenada Y: ");
         numeroDois = sc.nextDouble();
+
+        if(numeroUm == 0.0 && numeroDois == 0.0){
+            System.out.println("A coordenada se encontra na origem");
+        }else if (numeroUm == 0 ){
+            System.out.println("O valor está sobre o eixo X");
+        } else if (numeroDois ==0) {
+            System.out.println("O valor está sobre o eixo Y");
+        } else if (numeroUm > 0 && numeroDois > 0) {
+            System.out.println("O valor está no primeiro quadrante");
+        } else if (numeroUm < 0 && numeroDois > 0) {
+            System.out.println("O valor está no segundo quadrante");
+        } else if (numeroUm < 0 && numeroDois < 0) {
+            System.out.println("O valor está no terceiro quadrante");
+        }else {
+            System.out.println("O valor esá no quarto quadrante");
+        }
 
         System.out.println("______________E8:__________");
         /* Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos, pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem qualquer desvio. A moeda deste país é o Rombus, cujo símbolo é o R$. Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de Lisarb. Em seguida, calcule e mostre o valor que esta pessoa deve pagar de Imposto de Renda, segundo a tabela abaixo.
@@ -136,8 +154,22 @@ public class ExerciciosPropostosDois {
 
         Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00, pois a faixa de salário que fica de R$ 0.00 até R$ 2000.00 é isenta de Imposto de Renda. No exemplo fornecido (abaixo), a taxa é de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00, o que resulta em R$ 80.36 no total. O valor deve ser impresso com duas casas decimais. */
 
+        System.out.println("Digite o valor do salário:  ");
         numeroUm = sc.nextDouble();
-        numeroDois = sc.nextDouble();
+        double imposto;
+        if (numeroUm <= 2000.0){
+            System.out.println("O imposto até essa faixa de preço é isento");
+        }else if (numeroUm <= 3000){
+            imposto = (numeroUm -2000) * 0.08;
+            System.out.println("O valor do imposto é de: " + imposto);
+        }else if (numeroUm <= 4500){
+            imposto = (numeroUm-3000) * 0.18 + 1000* 0.08;
+            System.out.println("O valor do imposto é de: " + imposto);
+        }else{
+            imposto = (numeroUm - 4500) * 0.28 + 1500 * 0.18 + 1000 * 0.08;
+            System.out.println("O valor do imposto é de: " + imposto);
+        }
+
 
         sc.close();
     }
