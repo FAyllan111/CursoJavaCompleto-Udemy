@@ -1,5 +1,4 @@
-package cursoJava.modulo.exerciciosNivelamento;
-
+package cursoJava.exerciciosPropostos.exerciciosNivelamento;
 
 import java.util.Scanner;
 
@@ -7,8 +6,6 @@ public class ExerciciosPropostosQuatro {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int numeroUm;
-
-
 
         System.out.println("------------------Exercicio 1------------------");
         /* Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o X, se for o caso.

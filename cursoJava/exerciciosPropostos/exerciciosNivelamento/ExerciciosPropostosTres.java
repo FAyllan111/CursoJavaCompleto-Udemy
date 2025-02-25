@@ -1,4 +1,4 @@
-package cursoJava.modulo.exerciciosNivelamento;
+package cursoJava.exerciciosPropostos.exerciciosNivelamento;
 
 import java.util.Scanner;
 
