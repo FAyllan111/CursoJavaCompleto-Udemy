@@ -12,6 +12,12 @@ public class ContaBancaria {
         this.nomeTitular = nomeTitular;
     }
 
+    public ContaBancaria(int numeroConta, String nomeTitular, double depositoInicial) {
+        this.numeroConta = numeroConta;
+        depositar(depositoInicial);
+        this.nomeTitular = nomeTitular;
+    }
+
     public int getNumeroConta() {
         return numeroConta;
     }
