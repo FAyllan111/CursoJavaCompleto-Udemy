@@ -1,0 +1,18 @@
+package cursoJava.exerciciosPropostos.exerciciosArrayEListas.arrays;
+
+import java.util.Scanner;
+
+/*
+Faça um programa que leia N números reais e armazene-os em um vetor. Em seguida, mostrar na tela
+o maior número do vetor (supor não haver empates). Mostrar também a posição do maior elemento,
+considerando a primeira posição como 0 (zero).
+ */
+public class ProblemaMaiorPosicao {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+
+
+
+        sc.close();
+    }
+}
